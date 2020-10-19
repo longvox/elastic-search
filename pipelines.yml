@@ -1,0 +1,33 @@
+# This file is where you define your pipelines. You can define multiple.
+# For more information on multiple pipelines, see the documentation:
+#   https://www.elastic.co/guide/en/logstash/current/multiple-pipelines.html
+
+- pipeline.id: marketplace_search
+  path.config: "/etc/logstash/conf.d/marketplace_search.conf"
+
+- pipeline.id: get_services
+  path.config: "/etc/logstash/conf.d/get_services.conf"
+
+- pipeline.id: location
+  path.config: "/etc/logstash/conf.d/location.conf"
+
+- pipeline.id: service
+  path.config: "/etc/logstash/conf.d/service.conf"
+
+- pipeline.id: cate_service
+  path.config: "/etc/logstash/conf.d/cate_service.conf"
+
+- pipeline.id: city
+  path.config: "/etc/logstash/conf.d/city.conf"
+
+- pipeline.id: company
+  path.config: "/etc/logstash/conf.d/company.conf"
+
+- pipeline.id: company_detail
+  path.config: "/etc/logstash/conf.d/company_detail.conf"
+
+- pipeline.id: country
+  path.config: "/etc/logstash/conf.d/country.conf"
+
+- pipeline.id: cate_service_test
+  path.config: "/etc/logstash/conf.d/cate_service_test.conf"
